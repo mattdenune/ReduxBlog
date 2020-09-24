@@ -28,7 +28,7 @@ class PostsIndex extends Component {
             <div className='container mt-3'>
                 <div class="jumbotron">
                     <h1 class="display-4">Welcome to my Blog App</h1>
-                    <p class="lead">This is a simple application built in ReactJS with redux for state management. It calls an API hosted on Heroku to handle CRUD functionality.</p>
+                    <p class="lead">This is a simple application built in ReactJS with Redux for state management. It calls an API hosted on Heroku to handle CRUD functionality.</p>
                     <hr class="my-4"/>
                         <p>Please give it a try and make or deleted a post.</p>
                     <Link className="btn btn-primary btn-lg" to='/posts/new'>
