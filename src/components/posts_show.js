@@ -25,14 +25,19 @@ class PostsShow extends Component {
         }
 
         return (
-            <div>
-                <Link to="/" className="btn btn-primary">Back to Index</Link>
-                <button 
-                    className="btn btn-danger pull-xs-right"
-                    onClick={this.onDeleteClick.bind(this)}>Delete Post</button>
-                <h3>{post.title}</h3>
-                <h6>Categories: {post.categories}</h6>
-                <p>{post.content}</p>
+            <div className="card mt-4">
+                    <div className="card-header">
+                    <Link to="/" className="btn btn-primary">Back to Index</Link>
+                    <button 
+                        className="btn btn-danger pull-xs-right ml-2"
+                        onClick={this.onDeleteClick.bind(this)}>Delete Post</button>
+                </div>
+                <div className="card-body">
+                    <h3 className="card-title">{post.title}</h3>
+                    <h6>Categories: {post.categories}</h6>
+                    <hr/>
+                    <p className='card-text'>{post.content}</p>
+                </div>
             </div>
         );
     }
